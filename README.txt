@@ -1,16 +1,29 @@
-Este script es un programa que usa Python para leer y escribir información en un archivo de Excel.
+Llenar formulario PRESTAMO DE SALAS
 
-Primero, el programa carga un archivo de Excel específico en el que se desea trabajar.
+Este script es un programa que usa Python para leer y escribir información en un archivo de Excel,
+pensado para completar específicamente el documento de utilizdo por CAD "PRESTAMO DE SALAS". Las funcionalidades
+del script pueden ser aplicadas para cualquier archivo excel que tenga macros.
+
+El programa carga un archivo de Excel específico en el que se desea trabajar.
+
 A continuación, busca en la hoja de trabajo correspondiente y obtiene los datos que ya
-se encuentran en la tabla, para mostrarlos en una tabla en la consola. Luego, el programa
-le pide al usuario que ingrese información adicional para agregarla a la tabla en el archivo
-de Excel. Esta información incluye la fecha, el nombre completo, la carrera, el RUT del responsable
-de la sala, la hora de inicio y término, la sala asignada, la actividad y el número de asistentes.
+se encuentran en la tabla, para poder visualizar lo que ya está ingresado en el formulario.
+
+Luego, el programa le pide al usuario que ingrese información adicional, a través de inputs,
+para agregarla a la tabla en el archivo de Excel. Esta información incluye la fecha,el nombre completo,
+la carrera, el RUT del responsable de la sala, la hora de inicio y término, la sala asignada, la actividad
+y el número de asistentes.
+
 A continuación, el programa busca la primera fila vacía en la tabla, para poder agregar la información
-proporcionada por el usuario.
-Una vez encontrada la fila vacía, el programa escribe los datos proporcionados por el usuario en las
-columnas correspondientes de esa fila.
-Por último, el programa guarda los cambios realizados en el archivo de Excel original.
+proporcionada por el usuario. Una vez encontrada la fila vacía, el programa escribe los datos proporcionados
+por el usuario en las columnas correspondientes de esa fila. Por último, el programa guarda los cambios realizados
+en el archivo de Excel original.
+
+La intención del siguiente script es poder interacutar sin la nececidad de abrir el formulario Excel de manera directa,
+automatizar el ingreso de información y la validación de los datos ingresados en donde se pide información específica y 
+válida, protegiendo la integridad de los datos en la hoja de cálculo.
+
+
 
 Descripción detalla del script
 
