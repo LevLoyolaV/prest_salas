@@ -4,7 +4,10 @@ from prettytable import PrettyTable
 
 # Cargar el archivo Excel existente
 
-workbook = openpyxl.load_workbook('C:/Users/leona/PycharmProjects/UM/Préstamo_salas/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm', read_only=False, keep_vba=True)
+
+ruta_doc = r'H:\Python_Proyects\UM\FORM_PRES_SALAS\PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm'
+
+workbook = openpyxl.load_workbook(ruta_doc, read_only=False, keep_vba=True)
 
 # Seleccionar la hoja de trabajo que contiene la tabla
 worksheet = workbook['REGISTRO DE PRESTAMO SALAS']
@@ -67,4 +70,4 @@ worksheet.cell(row=fila_vacia, column=10, value=n_asistentes).alignment = Alignm
 
 
 # Guardar los cambios en el archivo de Excel
-workbook.save('C:/Users/leona/PycharmProjects/UM/Préstamo_salas/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm')
+workbook.save(ruta_doc)
