@@ -71,3 +71,6 @@ worksheet.cell(row=fila_vacia, column=10, value=n_asistentes).alignment = Alignm
 
 # Guardar los cambios en el archivo de Excel
 workbook.save(ruta_doc)
+
+print('\n')
+print("Los datos se han guardado en el archivo de Excel")
