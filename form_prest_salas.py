@@ -26,11 +26,6 @@ print('\n')
 print(tabla)
 print('\n')
 
-# Obtener los valores existentes de la tabla
-###print("Datos existentes en la tabla:")
-###for row in worksheet.iter_rows(values_only=True):
-###    print(row)
-
 # Obtener los valores de entrada del usuario
 fecha = input("Ingresa la fecha: ")
 nombre_completo = input("Ingresar nombre completo: ")
@@ -53,9 +48,6 @@ for i in range(7, 258):
 if fila_vacia is None:
     fila_vacia = worksheet.max_row + 1
 
-
-# Buscar la primera fila vacía en la tabla
-###fila_vacia = worksheet.max_row + 1
 
 # Escribir los valores en las celdas correspondientes
 worksheet.cell(row=fila_vacia, column=2, value=fecha).alignment = Alignment(horizontal='center', vertical='center')
