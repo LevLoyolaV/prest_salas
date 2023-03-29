@@ -4,7 +4,7 @@ from prettytable import PrettyTable
 
 # Cargar el archivo Excel existente
 
-workbook = openpyxl.load_workbook('C:/Users/leonardo.venegas/OneDrive - Universidad Mayor/Campus Oriente/PRESTAMO DE SALAS/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm', read_only=False, keep_vba=True)
+workbook = openpyxl.load_workbook('C:/Users/leona/PycharmProjects/UM/Préstamo_salas/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm', read_only=False, keep_vba=True)
 
 # Seleccionar la hoja de trabajo que contiene la tabla
 worksheet = workbook['REGISTRO DE PRESTAMO SALAS']
@@ -19,8 +19,9 @@ tabla.field_names = ["N°", "FECHA", "NOMBRE COMPLETO", "CARRERA", "RUT RESPONSA
 for fila in tabla_datos:
     tabla.add_row(fila)
 print("Datos existentes en la tabla:")
+print('\n')
 print(tabla)
-
+print('\n')
 
 # Obtener los valores existentes de la tabla
 ###print("Datos existentes en la tabla:")
@@ -66,4 +67,4 @@ worksheet.cell(row=fila_vacia, column=10, value=n_asistentes).alignment = Alignm
 
 
 # Guardar los cambios en el archivo de Excel
-workbook.save('C:/Users/leonardo.venegas/OneDrive - Universidad Mayor/Campus Oriente/PRESTAMO DE SALAS/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm')
+workbook.save('C:/Users/leona/PycharmProjects/UM/Préstamo_salas/PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm')
