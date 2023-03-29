@@ -11,3 +11,6 @@ proporcionada por el usuario.
 Una vez encontrada la fila vacía, el programa escribe los datos proporcionados por el usuario en las
 columnas correspondientes de esa fila.
 Por último, el programa guarda los cambios realizados en el archivo de Excel original.
+
+Descripción detalla del script
+
