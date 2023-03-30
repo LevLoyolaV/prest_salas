@@ -30,7 +30,8 @@ for row in worksheet.iter_rows(min_row=7, max_row=258, values_only=True):
 # previo ingreso de información
 
 tabla = PrettyTable()
-tabla.field_names = ["N°", "FECHA", "NOMBRE COMPLETO", "CARRERA", "RUT RESPONSABLE","HORA INICIO","HORA TÉRMINO","AULA ASIGNADA","ACTIVIDAD","TOTAL ASISTENTES"]
+tabla.field_names = ["N°", "FECHA", "NOMBRE COMPLETO", "CARRERA", "RUT RESPONSABLE",
+                     "HORA INICIO","HORA TÉRMINO","AULA ASIGNADA","ACTIVIDAD","TOTAL ASISTENTES"]
 for fila in tabla_datos:
     tabla.add_row(fila)
 print("Datos existentes en la tabla:")
