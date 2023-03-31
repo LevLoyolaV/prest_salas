@@ -6,9 +6,9 @@ from prettytable import PrettyTable
 # En ruta_doc se ingresa la ruta específica del archivo
 # en donde se encuentra el formulario a completar
 # la ruta del archivo "ruta_doc se debe poner entre comillas simples ( ' ) o dobles ( " )
-# y antes de la ruta se debe escribir una letra "r"m, esto es
-# para poder definir una cadena cruda (raw string)
-# sería de la siguiente manera ruta_doc = r'pegarrutadelarchivo'
+# y antes de la ruta se debe escribir una letra "r", esto es
+# para poder definir una cadena cruda (raw string).
+# Sería de la siguiente manera ruta_doc = r'pegarrutadelarchivo'
 
 ruta_doc = r'H:\Python_Proyects\UM\FORM_PRES_SALAS\PRESTAMO DE SALAS 2023 - PRUEBASPYTHON.xlsm'
 
